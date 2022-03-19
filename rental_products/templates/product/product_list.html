@@ -1,0 +1,9 @@
+{% if product_list %}
+    <ul>
+    {% for product in product_list %}
+      <li><a>{{ product.nickname }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>물품이 없습니다.</p>
+{% endif %}

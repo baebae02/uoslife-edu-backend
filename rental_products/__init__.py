@@ -20,7 +20,8 @@ def create_app():
     from . import models
 
     # Blue Print
-    from .views import main
+    from .views import main, product
     app.register_blueprint(main.bp)
+    app.register_blueprint(product.bp)
 
     return app
