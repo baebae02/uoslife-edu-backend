@@ -1,7 +1,7 @@
 {% if product_list %}
     <ul>
     {% for product in product_list %}
-      <li><a>{{ product.nickname }}</a></li>
+      <li><a href="{{ url_for('product.detail', product_id=product.id) }}">{{ product.nickname }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
